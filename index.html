@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/dfe9db6a8b.js" crossorigin="anonymous"></script>
+  <title>Юкон</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__top-wrapper">
+      <div class="header__top container">
+        <a class="header__logo" href="#">
+          <img src="img/logo.svg" width="225" height="137" alt="Юкон">
+        </a>
+        <div class="header__contacts">
+          <div class="header__address">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>г. Ростов-на-Дону, Шаумяна, 73<br>г. Волгодонск, ул. Энтузиастов, 13</p>
+          </div>
+          <div class="header__phone">
+            <i class="fas fa-phone-alt"></i>
+            <p>+7 (863) 229-81-82<br>+7 (8639) 24-79-79</p>
+          </div>
+        </div>
+        <a href="#" class="header__calculator btn">
+          <i class="fas fa-calculator"></i>Калькулятор онлайн
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom-wrapper">
+      <div class="header__bottom">
+        <nav class="header__navbar navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="header__navbar-nav navbar-nav">
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">О нас</a>
+              </li>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Каталог</a>
+              </li>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Услуги</a>
+              </li>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Цены</a>
+              </li>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Конструкции</a>
+              </li>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Акции</a>
+              </li>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Наши работы</a>
+              </li>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="form container" id="form">
+      <div class="form__wrapper row">
+        <form class="form__request col-lg-4" method="POST"
+ action="https://formfor.site/send/4yyIWaxgELFa6x9V8XYWEb8NZuSu6y">
+          <div class="form-group">
+            <label class="form__request-title" for="price">Итоговая цена:</label>
+            <input class="form__request-price form-control" type="text" name="price" id="price" value="0 рублей" disabled>
+          </div>
+          <div class="form-group">
+            <label class="form__request-city-label" for="city">Город доставки:</label>
+              <select class="form__request-city-select form-control" id="city" place>
+                <option disabled selected style='display:none;'>Выберите город</option>
+                <option>Ростов-на-Дону</option>
+                <option>Волгодонск</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label class="form__request-date-label" for="date">Дата рождения:</label>
+              <input class="form__request-date-input form-control" type="text" id="date" onfocus="(this.type='date')">
+          </div>
+          <div class="form-group">
+            <label class="form__request-phone-label" for="phone">Телефон:</label>
+            <input class="form__request-phone-input form-control" type="tel" id="phone" placeholder="+7(___) ___-__-__" required>
+          </div>
+          <button class="form__request-submit btn" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Оставить заявку</button>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check" required>
+            <label for="check">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
+        <form class="form__calculator row col-lg-8">
+          <h2 class="form__calculator-title"><i class="fas fa-calculator"></i>Калькулятор расчета стоимости</h2>
+          <div class="form__calculator-col-left col-lg-7">
+            <fieldset class="form-group">
+              <legend>Характеристики:</legend>
+              <div class="form__calculator__ceiling-area form-group row">
+                <label class="" for="ceiling-area">Площадь потолка:</label>
+                <input class="field form-control" type="text" id="ceiling-area">
+                <p>кв.м</p>
+              </div>
+              <div>
+                <p class="form__calculator-subtitle">Количество</p>
+                <div class="form__calculator-form-group form-group row">
+                  <label class="form__calculator-label" for="lamp-number">светильников:</label>
+                  <input class="field form-control" type="text" id="lamp-number">
+                  <p>шт.</p>
+                </div>
+                <div class="form__calculator-form-group form-group row">
+                  <label class="form__calculator-label" for="luster-number">люстр:</label>
+                  <input class="field form-control" type="text" id="luster-number">
+                  <p>шт.</p>
+                </div>
+                <div class="form__calculator-form-group form-group row">
+                  <label class="form__calculator-label" for="tube-number">труб:</label>
+                  <input class="field form-control" type="text" id="tube-number">
+                  <p>шт.</p>
+                </div>
+                <div class="form__calculator-form-group form-group row">
+                  <label class="form__calculator-label" for="angle-number">углов:</label>
+                  <input class="field form-control" type="text" id="angle-number">
+                  <p>шт.</p>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__calculator-col-right col-lg-4">
+            <fieldset class="form__calculator-texture form-group">
+              <legend>Фактура:</legend>
+              <div class="form-check">
+                <input class="visually-hidden" type="checkbox" id="glossy-check">
+                <label for="glossy-check">Глянцевая</label>
+              </div>
+              <div class="form-check">
+                <input class="visually-hidden" type="checkbox" id="matte-check">
+                <label for="matte-check">Матовая</label>
+                
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend>Цвет:</legend>
+              <div class="form-check">
+                <input class="visually-hidden" type="checkbox" id="blue-check">
+                <label for="blue-check">Синий</label>
+                
+              </div>
+              <div class="form-check">
+                <input class="visually-hidden" type="checkbox" id="red-check">
+                <label for="red-check">Красный</label>
+                
+              </div>
+              <div class="form-check">
+                <input class="visually-hidden" type="checkbox" id="green-check">
+                <label for="green-check">Зеленый</label>
+                
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top row container">
+        <div class="footer__column col-lg-2 col-md-4 col-sm-6">
+          <h2 class="footer__column-title">Компания</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Цены</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Акции</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Наши работы</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Гарантия</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Калькулятор</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column col-lg-2 col-md-4 col-sm-6">
+          <h2 class="footer__column-title">Каталог потолков</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Глянцевые</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Матовые</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Сатиновые</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">С фотопечатью</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Звездное небо</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Художественные</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column col-lg-2 col-md-4 col-sm-6">
+          <h2 class="footer__column-title">Услуги</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Установка натяжных потолков</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Двухуровневые потолки</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Потолки с подвеской</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Ремонт потолков</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column col-lg-2 col-md-4 col-sm-6">
+          <h2 class="footer__column-title">Конструкции</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Одноуровневые</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Двухуровневые</a>
+            </li>
+            <li class="nav-item">
+              <a class="footer__nav-link nav-link" href="#">Многоуровневые</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column col-lg-4 col-md-8 col-sm-12">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-image" src="img/logo-2.png" width="35" height="29" alt="Юкон">
+            <p class="footer__logo-text-main">ЮКОН</p>
+            <p class="footer__logo-text">Натяжные потолки</p>
+          </a>
+          <p class="footer__address">г. Ростов-на-Дону, Шаумяна, 73<br>+7 (863) 229-81-82</p>
+          <p class="footer__address">г. Волгоград, Шаумяна, 73<br>+7 (863) 229-81-82</p>
+        </div>
+    </div>
+    <div class="footer__bottom-wrapper">
+      <div class="footer__bottom row container">
+        <p class="footer__copyright">ООО “ИТ-Групп”</p>
+        <p class="footer__developer">Создание сайта - <a href="#">ЕВРОСАЙТЫ</a></p>
+      </div>
+    </div>
+  </footer>
+  <section>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="modal-close" aria-hidden="true"></span>
+            </button>
+          
+            <h5 class="modal-title" id="exampleModalLongTitle">Спасибо за зявку!</h5>
+            <p>Спасибо за Вашу заявку. Наш менеджер свяжется с Вами в ближайшее время!</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
